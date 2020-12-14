@@ -1,36 +1,32 @@
-# Frontier React Exercise
+# Hi
+I am Laura, Frontend developer originally from Italy who recently relocated to The Netherlands.
+IT college graduate, self-taught web developer, I've been moving on the stack quite a while, finding my balance as full-stack JS developer.
+Sports lover, travel junkie (...well when we sill could travel), practising a strict 0 inbox policy and with a severe case of British humour.
+Never got a Google reCAPTCHA right at the first try.
 
-At Frontier, we aim to help our customers find and hire more candidates by improving their hiring funnel. One large part of this funnel is our highly optimized job application forms, which we generate for each customer based on their requirements and their existing application form.
+Mark introduced me to Frontiers, I had great fun working on this.
 
-![An example of a Frontier application form](https://frontier-public-assets.s3-us-west-2.amazonaws.com/frontier-form-demo.png)
+# On the assignment
+Few notes before you dive into the code:
+## Features
+- dynamic creation of the forms from json
+- console log of forms on Submit
+- unit test of Section and TextElement component
+- really basic responsive styling
 
-When we generate our application forms, the first step involves capturing the customer's original form and generating a detailed schematic to describe the form to our React form generator on the frontend. For this exercise we'd like you to build a simple form generator based on some provided data.
+## Time spent
+1 day
 
-## About the exercise
-The JSON array in `./src/data/form_instructions.json` is an example of the instructions used by our React app to generate application forms on the fly for our customers.
+## Thoughts
+I believe this assignment it's intentionally left broad. I set as maximum time for this assignment 1 day, therefore I've decided to focus on the behavioural aspect more than on the look.
 
-For this short exercise, please use the basic React setup provided in this repo, along with the provided instruction JSON, to generate a functional application form UI. We want you to solve the problem in a way that makes sense to you, but we ask that you consider the following constraints:
+# Getting started
+- Install packages: `npm install`
+- Start development server: `npm start`
+- Run unit test suit: `npm test`
 
-#### Engineering
-- Please use Typescript to the best of your ability.
-- Please try to make good use of ES6 and React hooks.
-- In your finished product, the "Submit" button should log the user-entered form values to the console.
-- Try to structure your code so it can be unit tested. Bonus points if you also write a simple unit test for one of your components.
 
-#### Design
-- You have full creative control of the design. Feel free to have fun with it, or use our example image as reference.
-- Style the UI yourself by any means you feel comfortable (ie. styled-components, SCSS, LESS, vanilla CSS). Try to avoid using third party UI libraries like material-ui and bootstrap. We're primarily looking for consistency with styling, so there's no need to spend time on minute details.
+Looking forward to your feedback,
+Thanks!
 
-### Getting started
-
-- 1. Checkout this repo and run `npm install` to install dependencies.
-- 2. Open `src/components/App.tsx` where you'll find the instruction JSON you'll need to build the form.
-- 3. Run `npm start` to launch the dev server.
-
-When you send your solution back to us, please include your thoughts on the exercise and how long you spent on it so we can adjust our expectations.
-
-Good luck!
-
-– Frontier Engineering :)
-
-*ps -- We encourage you to treat the brief above like a product spec (and not a school test) where the customer requirements take precidence over the path you take to deliver them. So if you notice a more efficient path, or need to shave off some time to deliver your solution, just let us know in your response!*
+– Laura
