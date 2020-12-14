@@ -41,4 +41,10 @@ namespace Frontier {
     pattern?: string;
     step?: number;
   }
+  
+  type LabelType = {
+    id: string;
+    question_text: string;
+    required: boolean;
+  }
 }

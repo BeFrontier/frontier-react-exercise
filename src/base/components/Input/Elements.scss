@@ -1,0 +1,13 @@
+input[type=text], input[type=email] {
+  padding:10px;
+  margin:10px 0;
+  border: 1px solid #404e5c;
+
+  &.invalid {
+    border: 1px solid #ED6A5A;
+  }
+  &.valid {
+    border: 1px solid green;
+  }
+}
+

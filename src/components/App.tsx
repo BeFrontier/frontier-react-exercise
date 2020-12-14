@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import Section, { SectionProps } from './Section/Section'
 import formInstructions from '../data/form_instructions.json';
 
-function App() {
-  const job = formInstructions as Frontier.Job;
+const job = formInstructions as Frontier.Job;
+export const ThemeContext = React.createContext(job.theme);
 
-  // Check your console to see the full instructions!
-  console.log(job);
+
+function App() {
+  const ref = useRef( {values:new Map<string,Map<string,boolean|string>>(), isValid:true})
+  const [state, setState] = useState(true)
+  
+  function handleSectionChange(id: string, sectionValue: Map<string, boolean|string>, isValid: boolean) {
+    ref.current.values= ref.current.values.set(id,sectionValue)
+    ref.current.isValid = ref.current.isValid && isValid
+    setState(ref.current.isValid)
+  }
 
   return (
     <div>
-      <img src="https://frontier-public-assets.s3-us-west-2.amazonaws.com/frontier-corona-logo.svg" alt="Frontier Logo" />
-      <h1>👋 Hello from Team Frontier!</h1>
-      <p>Good luck with the exercise. If you have any questions please email Jason: jason@frontier.jobs</p>
+      {job.sections.map(section => {
+        let sectionProps: SectionProps = {section, handleSectionChange};
+        return <Section {...sectionProps} key={section.id}></Section>
+        }
+      )}
     </div>
   );
 }
