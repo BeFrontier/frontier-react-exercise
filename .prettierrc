@@ -4,9 +4,10 @@
   "arrowParens": "avoid",
   "overrides": [
     {
-      "files": "*.ts",
+      "files": ["*.ts", "*.tsx"],
       "options": {
-        "parser": "typescript"
+        "parser": "typescript",
+        "printWidth": 100
       }
     }
   ]

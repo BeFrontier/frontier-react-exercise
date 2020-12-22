@@ -1,0 +1,12 @@
+# Packages #
+############
+/node_modules
+/package.json
+
+# Build files #
+###############
+/build
+
+# Production build files #
+##########################
+/dist
